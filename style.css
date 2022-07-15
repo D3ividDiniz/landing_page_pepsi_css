@@ -1,0 +1,195 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&family=Rubik:wght@300;400;500;600&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    color: white;    
+}
+:root{
+    font-size:65%;
+}
+body{
+    height: 100vh;
+    width: 100%;
+    box-sizing: border-box;
+    background-color: #070A4E;
+}
+
+
+/* cabeçalho */
+header{ 
+    height:7rem;
+    display: flex;
+    box-sizing: border-box;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 8rem;
+
+}
+.flex{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.menu{
+    list-style: none;
+    gap: 4rem;
+}
+.link_h{
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 1.4rem;
+    color: whitesmoke;
+}
+strong{
+    font-weight:600;
+    color: white;
+}
+.botao_primary{
+    padding: 1rem 3em;
+    border-radius:50px;
+    font-size:1.1rem;
+    background-color:transparent;
+    border: solid 2px white;    
+}
+.botao_primary:hover{
+    background-color:white;
+    border: solid 2px white;
+    color: #070A4E;
+    transition: 0.1s ease-in-out;
+ 
+}
+#logo_h{
+    height:78%;
+
+}
+
+/* vertical menu */
+main{
+    display: flex;
+    width: 100%;
+    height: 100vh;
+
+}
+aside{
+    height:100vh;
+    justify-content: center;
+    width:5%;
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+    position: fixed;
+    top: 0;
+    left: 0;
+}
+.link_redes{
+    height:2.2rem;
+}
+.link_redes:hover{
+    filter:brightness(70%);
+    transition: 0.3s;
+    height:2.3rem;
+}
+
+/* Main */
+#ball{
+    background-color:white;
+    height:450px;
+    width:450px;
+    border-radius:100%;
+    position:fixed;
+    z-index: -3;
+    left: calc(100% - 300px);
+    top: -20%;
+    filter: blur(150px)
+
+}
+.left{
+    font-family: 'Rubik';
+    padding: 8rem 0 0 12rem;
+    width:60%;
+    box-sizing: border-box;
+}
+.left > h1{
+    font-family: 'Rubik';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 48px;
+    width:100%;
+
+}
+.description{
+    font-family: 'Rubik';
+    font-weight: 300;
+    font-style: normal;
+    font-size: 1.2rem;
+}
+.l{
+    font-size: 1.5rem;
+    margin: 1.6rem 0 4rem 0;
+}
+.s{
+    width:50%;
+    margin: 0 0 4rem 0;
+}
+.cards_nutricionais{
+    display: flex;
+    gap: 1rem
+}
+.card_nutricional{
+    width: 11rem;
+    height: 10.2rem;
+    background-color: #252872;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    position: relative;
+    font-size:1.3rem;
+    justify-content:space-between;
+    padding: 1.5rem 0;
+    margin: 0.8rem 0 6.6rem 0;
+    box-sizing: border-box;
+}
+.card_nutricional:hover{
+    height: 10.6rem;
+    margin: 0.8rem 0 6.2rem 0;
+    background-color: #202369;
+    transition: all 0.2s;
+
+}
+.card_nutricional > h3{
+    height:50%;
+    width:100%;
+    display: flex;
+    justify-content:center;
+    align-items:center;
+}
+.card_bottom{
+    background-color: #646693;
+    width: 100%;
+    text-align: center;
+    height: 3.6rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 1.4rem;
+    font-weight:400;
+    position:absolute;
+    top: 10.2rem
+}
+.value_nutricional{
+    font-size:2.4rem;
+    font-weight:600;
+    margin: 0 0 0 0; 
+    display: flex;
+    height:2rem;
+    align-items: center;
+}
+main > img{
+    position: fixed;
+    width: 80rem;
+    left: calc(100% - 80rem);
+    z-index: -1;   
+}
